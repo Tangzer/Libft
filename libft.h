@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tverdood <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: Verdoodt <Verdoodt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/07 18:35:52 by tverdood          #+#    #+#             */
-/*   Updated: 2022/01/14 12:32:22 by tverdood         ###   ########.fr       */
+/*   Updated: 2022/01/24 12:26:24 by Verdoodt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <limits.h>
+# include <stdarg.h>
 
 typedef struct s_list
 {
@@ -69,5 +70,18 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+int		ft_printf(const char *input, ...);
+int		ft_putchar(int c);
+int		ft_putstr_and_count(char *str);
+int		hexa_len(unsigned long long int nb);
+int		ft_input_type(char c);
+int		ft_print_var(char type, va_list args);
+int		ft_print_int(int nbr);
+int		ft_print_char(char c);
+int		ft_print_string(char *str);
+int		ft_print_pourcent(void);
+int		ft_print_hexa(unsigned int nb, char type);
+int		ft_print_unsigned_int(unsigned int nb);
+int		ft_print_pointer(unsigned long long int ptr);
 
 #endif
