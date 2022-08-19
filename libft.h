@@ -80,5 +80,9 @@ int		ft_print_pourcent(void);
 int		ft_print_hexa(unsigned int nb, char type);
 int		ft_print_unsigned_int(unsigned int nb);
 int		ft_print_pointer(unsigned long long int ptr);
+char	*ft_error(char *tmp);
+void	ft_lstclear(t_list **lst, void (*del)(void *));
+t_list	*lst_max(t_list *head);
+t_list	*lst_min(t_list *head);
 
 #endif

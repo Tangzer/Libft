@@ -58,7 +58,12 @@ SRCS = src/ft_isalpha.c\
        src/ft_printf/ft_print_pointer.c\
        src/ft_printf/ft_print_string.c\
        src/ft_printf/ft_print_unsigned_int.c\
-       src/ft_printf/ft_print_var.c
+       src/ft_printf/ft_print_var.c\
+       src/ft_error.c\
+       src/ft_lst_clear.c\
+       src/ft_lst_max.c\
+       src/ft_lst_min.c
+
 
 .c.o:	${SRCS}
 	${CC} ${CFLAGS} -c -o $@ $<
